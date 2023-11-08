@@ -2,7 +2,7 @@ start-all.sh
 localhost:9870
 create new project in intellij
 
-copy paste 3 files
+copy paste 4 files
 
 create jar file ->
 	run maven clean
