@@ -1,0 +1,24 @@
+start-all.sh
+create new project
+
+copy paste 3 files
+
+create jar file ->
+	run maven clean
+	run maven install
+	target folder will be created with jar file in the folder.
+
+open any folder and create a text file(input.txt).
+push the file into hadoop :
+     hadoop fs -mkdir /input (create input directory)
+     hadoop fs -put input.txt /input (push the file)
+
+run the jar file(navigate to intellij) and run :
+	hadoop jar target/Wordcount.jar org.example.WC_Runner /input/input.txt /output   click enter
+
+to check output:
+	hadoop fs -cat /output/part-0000 (part-0000 is the file where the result stored in hadoop)
+
+
+
+stop-all.sh
