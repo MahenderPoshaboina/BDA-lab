@@ -1,5 +1,6 @@
 start-all.sh
-create new project
+localhost:9870
+create new project in intellij
 
 copy paste 3 files
 
